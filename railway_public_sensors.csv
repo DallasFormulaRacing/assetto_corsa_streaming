@@ -1,0 +1,169 @@
+sensor_id,car,group,type,name
+1001,AC,AC,General,ABS Active
+1002,AC,AC,General,ABS Enabled
+1003,AC,AC,Wheel,AID Allow Tire Blankets
+1004,AC,AC,General,AID Auto Blip
+1005,AC,AC,DriveTrain,AID Auto Clutch
+1006,AC,AC,General,AID Auto Shift
+1007,AC,AC,ECU,AID Fuel Rate
+1008,AC,AC,General,AID Ideal Line
+1009,AC,AC,General,AID Mech Damage
+1010,AC,AC,General,AID Stability
+1011,AC,AC,Wheel,AID Tire Wear Rate
+1012,AC,AC,Aero,Air Density
+1014,AC,AC,Aero,Ballast
+1015,AC,AC,General,Best Lap Delta
+1016,AC,AC,General,Best Lap Time
+1017,AC,AC,Wheel,Brake Bias
+1018,AC,AC,Wheel,Brake Pos
+1019,AC,AC,Wheel,Brake Temp FL
+1020,AC,AC,Wheel,Brake Temp FR
+1021,AC,AC,Wheel,Brake Temp RL
+1022,AC,AC,Wheel,Brake Temp RR
+1023,AC,AC,General,CG Accel Lateral
+1024,AC,AC,General,CG Accel Longitudinal
+1025,AC,AC,General,CG Accel Vertical
+1026,AC,AC,General,CG Height
+1027,AC,AC,Wheel,Camber FL
+1028,AC,AC,Wheel,Camber FR
+1029,AC,AC,Wheel,Camber RL
+1030,AC,AC,Wheel,Camber RR
+1031,AC,AC,GPS,Car Coord X
+1032,AC,AC,GPS,Car Coord Y
+1033,AC,AC,GPS,Car Coord Z
+1034,AC,AC,General,Car Damage Front
+1035,AC,AC,General,Car Damage Left
+1036,AC,AC,General,Car Damage Rear
+1037,AC,AC,General,Car Damage Right
+1038,AC,AC,General,Car Pos Norm
+1039,AC,AC,Wheel,Caster FL
+1040,AC,AC,Wheel,Caster FR
+1041,AC,AC,Chassis,Chassis Pitch Angle
+1042,AC,AC,Chassis,Chassis Pitch Rate
+1043,AC,AC,Chassis,Chassis Roll Angle
+1044,AC,AC,Chassis,Chassis Roll Rate
+1045,AC,AC,Chassis,Chassis Velocity X
+1046,AC,AC,Chassis,Chassis Velocity Y
+1047,AC,AC,Chassis,Chassis Velocity Z
+1048,AC,AC,Chassis,Chassis Yaw Rate
+1049,AC,AC,DriveTrain,Clutch Pos
+1050,AC,AC,General,DRS Active
+1051,AC,AC,General,DRS Available
+1052,AC,AC,General,Drive Train Speed
+1053,AC,AC,ECU,ERS Heat Charging
+1054,AC,AC,ECU,ERS Is Charging
+1055,AC,AC,ECU,ERS Max Energy
+1056,AC,AC,ECU,ERS Power Level
+1057,AC,AC,ECU,ERS Recovery Level
+1058,AC,AC,ECU,Engine Brake Setting
+1059,AC,AC,ECU,Engine Limiter
+1060,AC,AC,ECU,Engine RPM
+1061,AC,AC,Misc,Flags
+1062,AC,AC,ECU,Fuel Level
+1063,AC,AC,DriveTrain,Gear
+1064,AC,AC,General,Ground Speed
+1065,AC,AC,Misc,HR Sample Clock
+1066,AC,AC,Pit,In Pit
+1067,AC,AC,ECU,KERS Charge
+1068,AC,AC,ECU,KERS Deployed Energy
+1069,AC,AC,ECU,KERS Input
+1070,AC,AC,ECU,KERS Max Energy
+1071,AC,AC,Misc,LR Sample Clock
+1072,AC,AC,General,Lap Invalidated
+1073,AC,AC,General,Lap Time
+1074,AC,AC,General,Lap Time2
+1075,AC,AC,General,Last Lap Time
+1076,AC,AC,General,Last Sector Time
+1077,AC,AC,Misc,MR Sample Clock
+1078,AC,AC,ECU,Max Fuel
+1079,AC,AC,Misc,Max Power
+1080,AC,AC,Misc,Max RPM
+1081,AC,AC,Misc,Max Sus Travel FL
+1082,AC,AC,Misc,Max Sus Travel FR
+1083,AC,AC,Misc,Max Sus Travel RL
+1084,AC,AC,Misc,Max Sus Travel RR
+1085,AC,AC,Misc,Max Torque
+1086,AC,AC,Misc,Max Turbo Boost
+1087,AC,AC,Wheel,Num Tires Off Track
+1088,AC,AC,Misc,Penalties Enabled
+1089,AC,AC,Misc,Position
+1090,AC,AC,Misc,Raw Data Sample Rate
+1091,AC,AC,Aero,Ride Height FL
+1092,AC,AC,Aero,Ride Height FR
+1093,AC,AC,Aero,Ride Height RL
+1094,AC,AC,Aero,Ride Height RR
+1095,AC,AC,General,Road Temp
+1096,AC,AC,General,Self Align Torque FL
+1097,AC,AC,General,Self Align Torque FR
+1098,AC,AC,General,Self Align Torque RL
+1099,AC,AC,General,Self Align Torque RR
+1100,AC,AC,Session,Session Lap Count
+1101,AC,AC,Session,Session Time Left
+1102,AC,AC,General,Steering Angle
+1103,AC,AC,General,Surface Grip
+1104,AC,AC,Wheel,Suspension Travel FL
+1105,AC,AC,Wheel,Suspension Travel FR
+1106,AC,AC,Wheel,Suspension Travel RL
+1107,AC,AC,Wheel,Suspension Travel RR
+1108,AC,AC,General,TC Active
+1109,AC,AC,General,TC Enabled
+1110,AC,AC,General,Throttle Pos
+1111,AC,AC,Wheel,Tire Dirt Level FL
+1112,AC,AC,Wheel,Tire Dirt Level FR
+1113,AC,AC,Wheel,Tire Dirt Level RL
+1114,AC,AC,Wheel,Tire Dirt Level RR
+1115,AC,AC,Wheel,Tire Load FL
+1116,AC,AC,Wheel,Tire Load FR
+1117,AC,AC,Wheel,Tire Load RL
+1118,AC,AC,Wheel,Tire Load RR
+1119,AC,AC,Wheel,Tire Loaded Radius FL
+1120,AC,AC,Wheel,Tire Loaded Radius FR
+1121,AC,AC,Wheel,Tire Loaded Radius RL
+1122,AC,AC,Wheel,Tire Loaded Radius RR
+1123,AC,AC,Wheel,Tire Pressure FL
+1124,AC,AC,Wheel,Tire Pressure FR
+1125,AC,AC,Wheel,Tire Pressure RL
+1126,AC,AC,Wheel,Tire Pressure RR
+1127,AC,AC,Wheel,Tire Radius FL
+1128,AC,AC,Wheel,Tire Radius FR
+1129,AC,AC,Wheel,Tire Radius RL
+1130,AC,AC,Wheel,Tire Radius RR
+1131,AC,AC,Wheel,Tire Rubber Grip FL
+1132,AC,AC,Wheel,Tire Rubber Grip FR
+1133,AC,AC,Wheel,Tire Rubber Grip RL
+1134,AC,AC,Wheel,Tire Rubber Grip RR
+1135,AC,AC,Wheel,Tire Slip Angle FL
+1136,AC,AC,Wheel,Tire Slip Angle FR
+1137,AC,AC,Wheel,Tire Slip Angle RL
+1138,AC,AC,Wheel,Tire Slip Angle RR
+1139,AC,AC,Wheel,Tire Slip Ratio FL
+1140,AC,AC,Wheel,Tire Slip Ratio FR
+1141,AC,AC,Wheel,Tire Slip Ratio RL
+1142,AC,AC,Wheel,Tire Slip Ratio RR
+1143,AC,AC,Wheel,Tire Temp Core FL
+1144,AC,AC,Wheel,Tire Temp Core FR
+1145,AC,AC,Wheel,Tire Temp Core RL
+1146,AC,AC,Wheel,Tire Temp Core RR
+1147,AC,AC,Wheel,Tire Temp Inner FL
+1148,AC,AC,Wheel,Tire Temp Inner FR
+1149,AC,AC,Wheel,Tire Temp Inner RL
+1150,AC,AC,Wheel,Tire Temp Inner RR
+1151,AC,AC,Wheel,Tire Temp Middle FL
+1152,AC,AC,Wheel,Tire Temp Middle FR
+1153,AC,AC,Wheel,Tire Temp Middle RL
+1154,AC,AC,Wheel,Tire Temp Middle RR
+1155,AC,AC,Wheel,Tire Temp Outer FL
+1156,AC,AC,Wheel,Tire Temp Outer FR
+1157,AC,AC,Wheel,Tire Temp Outer RL
+1158,AC,AC,Wheel,Tire Temp Outer RR
+1159,AC,AC,Wheel,Toe In FL
+1160,AC,AC,Wheel,Toe In FR
+1161,AC,AC,Wheel,Toe In RL
+1162,AC,AC,Wheel,Toe In RR
+1163,AC,AC,General,Turbo Boost
+1164,AC,AC,Wheel,Wheel Angular Speed FL
+1165,AC,AC,Wheel,Wheel Angular Speed FR
+1166,AC,AC,Wheel,Wheel Angular Speed RL
+1167,AC,AC,Wheel,Wheel Angular Speed RR
+1168,AC,AC,General,Wind Direction
+1169,AC,AC,General,Wind Speed
