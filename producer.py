@@ -141,6 +141,8 @@ class mock_streamer:
             
             event_list.append(EventData(json.dumps(data)))
 
+        return event_list
+
     # Groups events for batching
     def group_events(self, event_list: EventData) -> list[EventDataBatch]: 
         batch_list = []
