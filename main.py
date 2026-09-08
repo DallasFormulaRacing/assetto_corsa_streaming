@@ -9,7 +9,7 @@ import uuid
 
 # Kafka configuration
 KAFKA_CONFIG = {
-    'bootstrap.servers': '100.84.194.114:9092',
+    'bootstrap.servers': '100.64.94.120:9092',
 }
 
 KAFKA_TOPIC = 'ic26-decoded-can'
