@@ -90,6 +90,7 @@ class ACTelemetryClient:
     # Main receive loop
     def receive_loop(self):
         print("Receive loop started")
+        i = -1
         while self.running:
             try:
                 if self.socket is None:
@@ -97,6 +98,11 @@ class ACTelemetryClient:
                     break
     
                 data, addr = self.socket.recvfrom(BUFFER_SIZE)
+                
+                i += 1
+                if i % 100 != 0:
+                    continue
+
                 if self.subscription_type == SUBSCRIBE_UPDATE:
                     telemetry = RTCarInfo(data)
                     self.trigger('telemetry', telemetry)

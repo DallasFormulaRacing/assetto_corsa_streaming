@@ -13,8 +13,8 @@ KAFKA_CONFIG = {
 }
 
 KAFKA_TOPIC = 'ic26-decoded-can'
-SENSOR_ID = 'ac-telemetry-1'
-SENSOR_NAME = 'Assetto Corsa'
+SENSOR_ID = '1'
+SENSOR_NAME = 'ac_telem'
 STREAM_NAME = 'ac-telemetry'
 
 # RTCarInfo float[4]
@@ -47,14 +47,14 @@ def build_kafka_message(body: dict) -> dict:
 def base_message() -> dict:
     return {
         'timestamp': time.time(),
-        'source': 'Assetto Corsa',
         'sensor_id': SENSOR_ID,
         'sensor_name': SENSOR_NAME,
-        'event_type': 'telemetry',
     }
 
 def send(send_to_kafka, base: dict, channel: str, value):
-    body = {**base, 'channel': channel, 'value': value}
+    if not isinstance(value, float):
+        return
+    body = {**base, f'{channel}': value}
     send_to_kafka(build_kafka_message(body))
 
 def send_telemetry(send_to_kafka, telemetry):
@@ -132,19 +132,19 @@ def main():
         client.subscribe(SUBSCRIBE_UPDATE)
         
         # Send session start to Kafka
-        session_body = {
-            'timestamp': datetime.now(timezone.utc).isoformat(),
-            'sensor_id': SENSOR_ID,
-            'sensor_name': SENSOR_NAME,
-            'event_type': 'session_start',
-            'identifier': response.identifier,
-            'version': response.version,
-            'carName': response.carName,
-            'driverName': response.driverName,
-            'trackName': response.trackName,
-            'trackConfig': response.trackConfig,
-        }
-        send_to_kafka(build_kafka_message(session_body))
+        # session_body = {
+        #     'timestamp': datetime.now(timezone.utc).isoformat(),
+        #     'sensor_id': SENSOR_ID,
+        #     'sensor_name': SENSOR_NAME,
+        #     'event_type': 'session_start',
+        #     'identifier': response.identifier,
+        #     'version': response.version,
+        #     'carName': response.carName,
+        #     'driverName': response.driverName,
+        #     'trackName': response.trackName,
+        #     'trackConfig': response.trackConfig,
+        # }
+        # send_to_kafka(build_kafka_message(session_body))
         
         # Show data
         def on_telemetry(telemetry):
@@ -170,13 +170,13 @@ def main():
     except KeyboardInterrupt:
         print("\n\nStopping...")
         
-        end_body = {
-            'timestamp': datetime.now(timezone.utc).isoformat(),
-            'sensor_id': SENSOR_ID,
-            'sensor_name': SENSOR_NAME,
-            'event_type': 'session_end',
-        }
-        send_to_kafka(build_kafka_message(end_body))
+        # end_body = {
+        #     'timestamp': datetime.now(timezone.utc).isoformat(),
+        #     'sensor_id': SENSOR_ID,
+        #     'sensor_name': SENSOR_NAME,
+        #     'event_type': 'session_end',
+        # }
+        # send_to_kafka(build_kafka_message(end_body))
         kafka_producer.flush()
         print(f"Flushed messages to Kafka topic: {KAFKA_TOPIC}")
         
